@@ -1,0 +1,1 @@
+{"pathToFile":"C:\\Users\\User\\Downloads","useCache":false,"useTime":false}
