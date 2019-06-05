@@ -1,6 +1,8 @@
 package views;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -60,6 +62,7 @@ public class FXMLYouTubeController  implements Initializable {
     @FXML
     private JFXButton btn_toYouTubeMainDialog;
     @FXML private TabPane myTabPane;
+    @FXML private JFXTextField channelIdTF;
     @FXML
     void showYouTubeMainDialog(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXML_MainForm.fxml"));
@@ -71,10 +74,11 @@ public class FXMLYouTubeController  implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-
+    ObservableList<String> channelIds;
     @FXML
     void addChannelId(ActionEvent event){
-
+        String id = channelIdTF.getText();
+        //channelIds.add();
     }
 
 }
